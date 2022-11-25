@@ -1,0 +1,19 @@
+.form-body {
+    width: 80%;
+}
+
+form {
+    width: 100%;
+    height: max-content;
+    background-color: white;
+}
+
+.form-main-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+}

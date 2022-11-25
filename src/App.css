@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(189, 204, 255);
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+}
+
+main {
+  width: 100%;
+}
