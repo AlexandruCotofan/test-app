@@ -9,8 +9,9 @@ function App() {
       <AccountSideMenu />
       <main>
         <HeaderBar />
+        <UserSettingsMenu />
       </main>
-      {/* <UserSettingsMenu /> */}
+      
     </div>
   );
 }
