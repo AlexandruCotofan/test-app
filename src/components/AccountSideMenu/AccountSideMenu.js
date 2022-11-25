@@ -1,5 +1,5 @@
 import "./AccountSideMenu.css";
-
+import {Routes, Route, useNavigate} from 'react-router-dom';
 export function setDisplay() {
     if (document.getElementById("aside").style.display === "flex") {
         document.getElementById("aside").style.display = "none";
@@ -13,6 +13,13 @@ function AccountSideMenu() {
     const accountLastName = 'Doe';
     const accountEmail = 'johndoe@generic.com';
     const balance = 10000;
+    const navigate = useNavigate();
+    const navigateHome = () =>{
+      navigate('/home');
+    }
+    const navigateMyAccount = () =>{
+      navigate('/myaccount');
+    }
   return (
     <aside id="aside">
       <section className="account-credentials">
@@ -27,11 +34,11 @@ function AccountSideMenu() {
         <p>Account Balance</p>
       </div>
       <section className="account-options">
-        <button>
+        <button onClick={navigateHome}>
           <div>IMG</div>
           <p>Home</p>
         </button>
-        <button>
+        <button onClick ={navigateMyAccount}>
           <div>IMG</div>
           <p>My Account</p>
         </button>
