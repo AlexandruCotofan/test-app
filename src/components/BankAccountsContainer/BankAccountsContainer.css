@@ -47,3 +47,10 @@
 .bank-accounts-container .create-btn:active {
   background-color: rgb(0, 41, 155);
 }
+
+
+.main-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

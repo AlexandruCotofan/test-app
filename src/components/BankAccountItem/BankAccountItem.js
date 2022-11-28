@@ -4,17 +4,17 @@ import AccountSideMenu from "../AccountSideMenu/AccountSideMenu.js";
 
 function BankAccountItem() {
     return(
-        // <div>
-        //     <p>NAME</p>
-        //     <button>DELETE</button>
-        // </div>
-        <div className="main-page">
-        <AccountSideMenu />
-        <main>
-          <HeaderBar />
+        <div>
+            <p>NAME</p>
+            <button>DELETE</button>
+        </div>
+      //   <div className="main-page">
+      //   <AccountSideMenu />
+      //   <main>
+      //     <HeaderBar />
          
-        </main>
-      </div>
+      //   </main>
+      // </div>
     );
 }
 
