@@ -9,7 +9,7 @@ function MainPage() {
       <AccountSideMenu />
       <main>
         <HeaderBar />
-        <UserSettingsMenu />
+        
       </main>
     </div>
   );

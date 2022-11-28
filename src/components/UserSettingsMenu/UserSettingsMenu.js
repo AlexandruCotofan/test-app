@@ -1,6 +1,8 @@
 import "./UserSettingsMenu.css";
 import React from 'react';
 import {useState} from "react";
+import HeaderBar from "../HeaderBar/HeaderBar.js";
+import AccountSideMenu from "../AccountSideMenu/AccountSideMenu.js";
 
 function UserSettingsMenu() {
 
@@ -50,21 +52,28 @@ function UserSettingsMenu() {
 
 
   return (
-    <div className="form-body">
-        <p>User Settings</p>
-      <form>
-        <div className="form-main-body">
-          <div>IMG</div>
-          <div className="form-inputs">
-            <input type="text" placeholder="First name" required name="firstname" value={inputs.firstname || ""} onChange={handleChange}></input>
-            <input type="text" placeholder="Last name" required name="lastname" value={inputs.lastname || ""} onChange={handleChange}></input>
-            <input type="email" placeholder="Email address" required name="emailaddress" value={inputs.emailaddress || ""} onChange={handleChange}></input>
-            <input type="tel" placeholder="Phone number" required name="phonenumber"value={inputs.phonenumber || ""} onChange={handleChange}></input>
-          </div>
-        </div>
-        <button type="submit" onClick={handleClick} disabled ={load}>Save</button>
-      </form>
-    </div>
+    <div className="main-page">
+        <AccountSideMenu />
+        <main>
+          <HeaderBar />
+          <div className="form-body">
+                <p>User Settings</p>
+              <form>
+                <div className="form-main-body">
+                  <div>IMG</div>
+                  <div className="form-inputs">
+                    <input type="text" placeholder="First name" required name="firstname" value={inputs.firstname || ""} onChange={handleChange}></input>
+                    <input type="text" placeholder="Last name" required name="lastname" value={inputs.lastname || ""} onChange={handleChange}></input>
+                    <input type="email" placeholder="Email address" required name="emailaddress" value={inputs.emailaddress || ""} onChange={handleChange}></input>
+                    <input type="tel" placeholder="Phone number" required name="phonenumber"value={inputs.phonenumber || ""} onChange={handleChange}></input>
+                  </div>
+                </div>
+                <button type="submit" onClick={handleClick} disabled ={load}>Save</button>
+              </form>
+           </div>
+        </main>
+      </div>
+    
   );
 }
 

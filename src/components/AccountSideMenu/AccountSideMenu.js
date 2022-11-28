@@ -20,6 +20,15 @@ function AccountSideMenu() {
     const navigateMyAccount = () =>{
       navigate('/myaccount');
     }
+    const navigateBankAccount = () =>{
+      navigate('/bankaccount');
+    }
+    const navigateNotifications = () =>{
+      navigate('/notifications');
+    }
+    const navigateLogOut = () =>{
+      navigate('/');
+    }
   return (
     <aside id="aside">
       <section className="account-credentials">
@@ -42,15 +51,15 @@ function AccountSideMenu() {
           <div>IMG</div>
           <p>My Account</p>
         </button>
-        <button>
+        <button onClick = {navigateBankAccount}>
           <div>IMG</div>
           <p>Bank Accounts</p>
         </button>
-        <button>
+        <button onClick={navigateNotifications}>
           <div>IMG</div>
           <p>Notifications</p>
         </button>
-        <button>
+        <button onClick ={navigateLogOut}>
           <div>IMG</div>
           <p>Logout</p>
         </button>
