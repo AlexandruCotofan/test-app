@@ -22,6 +22,8 @@ aside {
   max-width: 70%;
 }
 
+
+
 .ph-img {
   background-color: rgb(146, 148, 255);
   padding: 10%;
@@ -83,9 +85,13 @@ aside {
 
 .account-options > button > div {
   padding: 1em;
+  width: 0px;
 }
 
 .account-options > button > p {
-  width: 70%;
+  width: 60%;
   text-align: left;
+  font-size: 15px;
 }
+
+
