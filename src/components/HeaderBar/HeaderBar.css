@@ -16,7 +16,7 @@ header > div {
 .header-selection {
   font-style: normal;
   justify-content: center;
-  display: none;
+  /* display: none; */
 }
 
 .header-selection > p {
